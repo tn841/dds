@@ -1,55 +1,75 @@
 import Image from "next/image";
 import "./ui/main.css";
+import {MainCard, MainMoreIcon} from "./ui/main-component";
 
 export default function Home() {
   return (
     <div className="container">
-      <h1>home</h1> 
       <div className="main_components">
         <div className="components_table">
             <details open>
                 <summary>
                   <div className="comp_title">Guidelines<span>3</span>
-                    <Image src="/images/icon_more.png" alt="더보기 아이콘" width={10} height={10} />
+                    <MainMoreIcon />
                   </div>
                 </summary>
                 <div className="components_box">
                         <ul>
                             <li>
-                                <a href="./foundation.php?view=guide.html">
-                                    <Image src="/images/icon_main_guide.png" alt="레이아웃가이드에 대한 아이콘" width={100} height={100} />
+                                <MainCard
+                                    href="/foundation/layout"
+                                    imgsrc="/images/icon_main_guide.png"
+                                    imgalt="레이아웃가이드에 대한 아이콘"
+                                    label="Guide/Layout"
+                                    description="화면 크기에 따라 설계하기"
+                                />
+                                {/* <a href="./foundation.php?view=guide.html">
+                                    <Image 
+                                        src="/images/icon_main_guide.png" 
+                                        alt="레이아웃가이드에 대한 아이콘" 
+                                        width={36} 
+                                        height={36} />
                                     <strong>Guide/Layout</strong>
                                     <p>화면 크기에 따라 설계하기</p>
-                                </a>
+                                </a> */}
                             </li>
                             <li>
-                                <a href="./foundation.php?view=typography.html">
-                                    <Image src="/images/icon_main_typo.png" alt="타이포가이드에 대한 아이콘" width={100} height={100} />
-                                    <strong>Typography</strong>
-                                    <p>서체에 대한 가이드</p>
-                                </a>
+                                <MainCard 
+                                    href="/foundation/typo"
+                                    imgalt="타이포가이드에 대한 아이콘"
+                                    imgsrc="/images/icon_main_typo.png"
+                                    label="Typography"
+                                    description="서체에 대한 가이드"
+                                />
                             </li>
                             <li>
-                                <a href="./foundation.php?view=olor.html">
-                                    <Image src="/images/icon_main_color.png" alt="컬러가이드에 대한 아이콘" width={100} height={100}/>
-                                    <strong>Color</strong>
-                                    <p>컬러 코드 제공</p>
-                                </a>
+                                <MainCard 
+                                    href="/foundation/color"
+                                    imgalt="컬러가이드에 대한 아이콘"
+                                    imgsrc="/images/icon_main_color.png"
+                                    label="Color"
+                                    description="컬러 코드 제공"
+                                />
                             </li>
                         </ul>
                 </div>
             </details>
             <details open>
-                <summary><div className="comp_title">Controls<span>8</span>
-                <Image src="/images/icon_more.png" alt="더보기 아이콘" width={100} height={100}/></div></summary>
+                <summary>
+                    <div className="comp_title">Controls<span>8</span>
+                        <MainMoreIcon/>
+                    </div>
+                </summary>
                 <div className="components_box">
                     <ul>
                         <li>
-                            <a href="./foundation.php?view=button.html">
-                                <Image src="/images/icon_main_button.png" alt="버튼에 대한 아이콘" width={100} height={100} />
-                                <strong>Button</strong>
-                                <p>사용자 행동 유도</p>
-                            </a>
+                            <MainCard 
+                                imgalt="버튼에 대한 아이콘"
+                                imgsrc="/images/icon_main_button.png"
+                                href="/foundation/button"
+                                label="Button"
+                                description="사용자 행동 유도"
+                            />
                         </li>
                         <li>
                             <a href="./foundation.php?view=select.html">
@@ -104,8 +124,11 @@ export default function Home() {
                 </div>
             </details>
             <details open>
-                <summary><div className="comp_title">Resources<span>8</span>
-                <Image src="/images/icon_more.png" alt="더보기 아이콘" width={100} height={100}/></div></summary>
+                <summary>
+                    <div className="comp_title">Resources<span>8</span>
+                        <MainMoreIcon/>
+                    </div>
+                </summary>
                 <div className="components_box">
                     <ul>
                         <li>
@@ -168,8 +191,10 @@ export default function Home() {
                 </div>
             </details>
             <details open>
-                <summary><div className="comp_title">Mobile<span>3</span>
-                <Image src="/images/icon_more.png" alt="더보기 아이콘" width={100} height={100}/></div></summary>
+                <summary>
+                    <div className="comp_title">Mobile<span>3</span>
+                    <MainMoreIcon/>
+                    </div></summary>
                 <div className="components_box">
                     <ul>
                         <li>
@@ -197,8 +222,10 @@ export default function Home() {
                 </div>
             </details>
             <details open>
-                <summary><div className="comp_title">Icons<span>1</span>
-                <Image src="/images/icon_more.png" alt="더보기 아이콘" width={100} height={100}/></div></summary>
+                <summary>
+                    <div className="comp_title">Icons<span>1</span>
+                    <MainMoreIcon/>
+                    </div></summary>
                 <div className="components_box off">
                     <ul>
                         <li>

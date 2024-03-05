@@ -23,14 +23,14 @@ export default function RootLayout({
                           <Link href="/"  className="logo">
                           <Image src="/images/img_logo.png" 
                               alt="logo" 
-                              width={250} height={45}/>
+                              width={300} height={35}/>
                           </Link>
                           <ul>
                               <li data-title="about">
                                 <Link href="/about">About</Link>
                               </li>
                               <li data-title="foundation">
-                                <Link href="/Foundation">Foundation</Link>
+                                <Link href="/foundation">Foundation</Link>
                               </li>
                               <li data-title="web">
                                 <Link href="/web">Web</Link>
@@ -39,7 +39,7 @@ export default function RootLayout({
                                 <Link href="/mobile">Mobile</Link>
                               </li>
                               <li data-title="download">
-                                <Link href="/download">Mownload</Link>
+                                <Link href="/download">Download</Link>
                               </li>
                           </ul>
               </div>
