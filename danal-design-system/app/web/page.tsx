@@ -1,8 +1,6 @@
+import { redirect } from "next/navigation";
+
 export default function Web() {
 
-    return (
-        <>
-            <h1>Web page</h1>
-        </>
-    )
+    redirect('/web/button')
 }
